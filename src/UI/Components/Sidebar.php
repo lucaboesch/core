@@ -495,24 +495,24 @@ class Sidebar implements OutputableInterface, ContainerAwareInterface
 
                 echo "<table class='mini' cellspacing='0' style='width: 100%; table-layout: fixed;'>";
                 echo "<tr class='head'>";
-                echo "<th style='width: 36%; font-size: 85%; text-transform: uppercase'>";
+                echo "<th style='width: 36%; font-size: 85%; text-transform: uppercase; word-break: break-all;'>";
                 echo __('Class');
                 echo '</th>';
                 if (isActionAccessible($guid, $connection2, '/modules/Planner/planner.php')) {
-                    echo "<th style='width: 16%; font-size: 60%; text-align: center; text-transform: uppercase'>";
+                    echo "<th style='width: 16%; font-size: 60%; text-align: center; text-transform: uppercase; word-break: break-all;'>";
                     echo __('Plan');
                     echo '</th>';
                 }
                 if (getHighestGroupedAction($guid, '/modules/Markbook/markbook_view.php', $connection2) == 'View Markbook_allClassesAllData') {
-                    echo "<th style='width: 16%; font-size: 60%; text-align: center; text-transform: uppercase'>";
+                    echo "<th style='width: 16%; font-size: 60%; text-align: center; text-transform: uppercase; word-break: break-all;'>";
                     echo __('Mark');
                     echo '</th>';
                 }
-                echo "<th style='width: 16%; font-size: 60%; text-align: center; text-transform: uppercase'>";
+                echo "<th style='width: 16%; font-size: 60%; text-align: center; text-transform: uppercase; word-break: break-all;'>";
                 echo __('People');
                 echo '</th>';
                 if (isActionAccessible($guid, $connection2, '/modules/Planner/planner.php')) {
-                    echo "<th style='width: 16%; font-size: 60%; text-align: center; text-transform: uppercase'>";
+                    echo "<th style='width: 16%; font-size: 60%; text-align: center; text-transform: uppercase; word-break: break-all;X'>";
                     echo __('Tasks');
                     echo '</th>';
                 }
